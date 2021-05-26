@@ -1,0 +1,30 @@
+{
+  "name": "1hr",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "express-graphql": "^0.12.0",
+    "graphql": "^15.5.0",
+    "http-errors": "~1.6.3",
+    "jade": "^1.9.2",
+    "mongodb": "^3.6.8",
+    "mongoose": "^5.12.11",
+    "morgan": "~1.9.1",
+    "nano": "^9.0.3"
+  },
+  "main": "app.js",
+  "author": "dhruv_mangal",
+  "license": "UNLICENSED",
+  "description": "Ecommerce app for drug distribution",
+  "keywords": [
+    "drug",
+    "ecommerce",
+    "delivery"
+  ]
+}
