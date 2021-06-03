@@ -1,9 +1,13 @@
 
 const mongoose = require('mongoose');
 const uri = "mongodb+srv://m001-student:m001-mongodb-basics@sandbox.tfhp3.mongodb.net/drug?retryWrites=true&w=majority";
-const client = mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+const client = mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true, dbName: 'drug' }).then(()=>{
+  console.log('Database connected');
+}).catch((err)=>{
+  console.log(err);
+});
 
-module.export  = client;
+module.exports  = client;
 /*
 client.connect(err => {
     console.log('connected');

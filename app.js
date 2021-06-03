@@ -3,7 +3,8 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-const nano = require('nano')('http://admin:axra3_rts_@localhost:5984');
+var connection = require('./db');
+
 var { graphqlHTTP } = require('express-graphql');
 var { buildSchema } = require('graphql');
 

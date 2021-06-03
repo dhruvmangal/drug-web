@@ -26,5 +26,14 @@
     "drug",
     "ecommerce",
     "delivery"
-  ]
+  ],
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhruvmangal/drug-web.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dhruvmangal/drug-web/issues"
+  },
+  "homepage": "https://github.com/dhruvmangal/drug-web#readme"
 }

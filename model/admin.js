@@ -1,6 +1,4 @@
-var connection = require('../db');
-import mongoose from 'mongoose';
-
+var mongoose = require('mongoose');
 const { Schema } = mongoose;
 const adminSchema = new Schema({
     name: String,
@@ -13,6 +11,5 @@ const adminSchema = new Schema({
 });
 
 
-//const admin = mongoose.model('Admin', adminSchema);
-
-module.export = adminSchema;
+const Admin = mongoose.model('Admin', adminSchema, 'admin');
+module.exports = Admin;
